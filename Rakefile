@@ -1,6 +1,8 @@
 require 'rake'
 require 'rspec/core/rake_task'
 require_relative 'db/config'
+require_relative 'lib/sunlight_legislators_importer.rb'
+include SunlightLegislatorsImporter
 
 
 desc "create the database"
@@ -29,5 +31,10 @@ end
 
 desc "Run the specs"
 RSpec::Core::RakeTask.new(:specs)
+
+desc "populate the database"
+task "db:populate" do
+  SunlightLegislatorsImporter.import
+end
 
 task :default  => :specs
