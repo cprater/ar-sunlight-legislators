@@ -1,6 +1,8 @@
 ActiveRecord Sunlight Legislators
 =================================
 
+This was a project in the early stages of Dev Bootcamp, check out some of my better work in the [happening_now](https://github.com/dbcfoxes2014/happening_now) repo
+
 To get started:
 
 1. Fork this repository.
